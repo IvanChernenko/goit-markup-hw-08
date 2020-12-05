@@ -1,0 +1,33 @@
+.duties {
+  margin-bottom: 94px;
+}
+
+.duties-box {
+  width: calc((100%-60px) / 3);
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+}
+
+.img {
+  display: block;
+}
+
+.duties-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
