@@ -492,6 +492,13 @@ address {
 
 .duties {
   margin-bottom: 94px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .duties {
+    display: block;
+  }
 }
 
 .duties-box {

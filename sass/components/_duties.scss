@@ -1,5 +1,10 @@
 .duties {
   margin-bottom: 94px;
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 
 .duties-box {
