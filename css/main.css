@@ -531,10 +531,17 @@ address {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.crew-container {
+  background-color: var(--light-grey);
+  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .item-title {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -542,17 +549,30 @@ address {
   margin-bottom: 50px;
 }
 
+@media (min-width: 1200px) {
+  .item-title {
+    font-size: 36px;
+  }
+}
+
 .crew-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .crew-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .crew-item {
-  flex-basis: calc(100 / 4-30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  display: block;
+  margin-bottom: 30px;
   text-align: center;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -562,11 +582,23 @@ address {
   padding-bottom: 30px;
 }
 
-.crew-container {
-  background-color: var(--light-grey);
-  margin-bottom: 94px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media (min-width: 768px) {
+  .crew-item {
+    flex-basis: calc(100% / 2 - 30px);
+    max-width: 270px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .crew-item {
+    flex-basis: calc(100% / 4 - 30px);
+    max-width: 270px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .crew-name {
