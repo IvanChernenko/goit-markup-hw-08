@@ -11,25 +11,41 @@
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 10px;
+  text-align: center;
+
+  @include for-size(tablet) {
+    text-align: left;
+  }
 }
 
 .flexbox {
-  display: flex;
-  justify-content: space-between;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .content-box {
-  width: calc((100%-90px) / 4);
-  margin-right: 30px;
+  display: block;
+
   align-items: center;
   justify-content: center;
+  margin: 15px;
+
+  @include for-size(tablet) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background-color: var(--light-grey);
   margin-bottom: 30px;
