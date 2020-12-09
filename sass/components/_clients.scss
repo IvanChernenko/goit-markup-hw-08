@@ -1,15 +1,17 @@
 .clients {
   padding-bottom: 94px;
-  /* padding-top: 94px; */
 }
 
 .clients-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: -15px;
 }
 
-.clients-icons-item:not(:last-child) {
-  margin-right: 30px;
+.clients-icons-item {
+  display: flex;
+  margin: 15px;
 }
 
 .clients-icons-link {
