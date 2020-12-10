@@ -179,7 +179,7 @@
 .button-form {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 15px;
   display: block;
   padding-left: 29px;
   padding-right: 8px;
@@ -199,6 +199,10 @@
   border-radius: 4px;
   background-color: var(--accent-cl);
   cursor: pointer;
+
+  @include for-size(desktop) {
+    margin-top: 30px;
+  }
 }
 
 .submit-input {
