@@ -706,14 +706,70 @@ address {
 
 .footer {
   display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.link-logo-footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .link-logo-footer {
+    justify-content: start;
+  }
 }
 
 .contacts {
-  margin-right: 70px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .contacts {
+    margin-right: 70px;
+  }
+}
+
+.footer-adress {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .footer-adress {
+    text-align: start;
+  }
 }
 
 .icon-footer {
   padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .icon-footer {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .footer-container {
@@ -724,7 +780,6 @@ address {
 .footer-list {
   margin-top: 20px;
   margin-bottom: 9px;
-  width: 212px;
 }
 
 .footer-mail {
@@ -786,13 +841,29 @@ address {
 
 .submit {
   padding-top: 12px;
-  margin-left: 93px;
-  display: block;
-  align-items: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .submit {
+    align-items: flex-start;
+  }
 }
 
 .submit-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .submit-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .submit-form {
@@ -818,6 +889,13 @@ address {
   padding-bottom: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .submit-input {
+    margin: 0;
+  }
 }
 
 .button-form {
@@ -861,7 +939,7 @@ address {
   padding-right: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-width: 200px;
+  width: 200px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
