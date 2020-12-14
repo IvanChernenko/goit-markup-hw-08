@@ -108,12 +108,13 @@
 
 .portfolio-btn {
   padding-top: 60px;
+  padding-bottom: 114px;
 }
 
 .portfolio-lst {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-left: -15px;
   margin-top: -15px;
 }
@@ -143,9 +144,5 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
-
-.portfolio-pb {
-  padding-bottom: 114px;
 }
 /*# sourceMappingURL=portfolio.css.map */
