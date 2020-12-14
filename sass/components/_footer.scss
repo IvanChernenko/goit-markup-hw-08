@@ -23,6 +23,11 @@
   flex-direction: column;
   margin-bottom: 60px;
 }
+@media screen and(min-width: 1200px) {
+  .contacts {
+    margin-right: 70px;
+  }
+}
 
 .footer-adress {
   text-align: center;
