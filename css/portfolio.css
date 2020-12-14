@@ -1,9 +1,9 @@
 .portfolio {
-  text-decoration: none;
   font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 2;
+  line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--black);
   margin: 0;
@@ -41,7 +41,6 @@
 .prtf-link {
   display: inline-block;
   position: relative;
-  height: 404px;
 }
 
 .prtf {
@@ -122,10 +121,22 @@
 .portfolio-box {
   display: flex;
   margin-bottom: 30px;
-  width: 354px;
+  width: 450px;
   margin-bottom: 0;
   margin-left: 15px;
   margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-box {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-box {
+    width: 370px;
+  }
 }
 
 .portfolio-box:hover {

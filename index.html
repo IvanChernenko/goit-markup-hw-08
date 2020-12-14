@@ -36,35 +36,13 @@
         </ul>
 
         
-        <button class="mobile-menu-btn">
-          <svg class="mobile-menu-icon">
-            <use href="./img/symbol-defs.svg#menu_24px"></use>
+        <button class="mobile-menu-btn" data-menu-button>
+          <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./img/symbol-defs.svg#menu_24px"></use>
+            <use class="icon-cross" href="./img/symbol-defs.svg#cross"></use>
           </svg>
         </button>
-              </nav>
-        <ul class="list mail-tel">
-          <li class="item">
-            <a  href="mailto:info@devstudio.com" class="link mail-menu-link mail" aria-label="Envelope">
-              <svg class="icon-contact" >
-                <use href="./img/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link mail-menu-link" aria-label="Telephone">
-              <svg class="icon-contact">
-                <use href="./img/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        
-      </div>
-      
-    </header>
-    <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
       <div class="mobile-div">
           <ul class="list mobile-menu-list">
           <li class="mobile-menu-item"><a href="./index.html" class="current-page">Студия</a></li>
@@ -93,7 +71,33 @@
           </li>
         </ul>
       </div>
-        </div>
+    </div>
+        
+              </nav>
+        <ul class="list mail-tel">
+          <li class="item">
+            <a  href="mailto:info@devstudio.com" class="link mail-menu-link mail" aria-label="Envelope">
+              <svg class="icon-contact" >
+                <use href="./img/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link mail-menu-link" aria-label="Telephone">
+              <svg class="icon-contact">
+                <use href="./img/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+      
+    </header>
+    
+    
 
     <main>
       <!-- Герой -->
@@ -168,28 +172,32 @@
           <ul class="list flexbox">
             <li class="duties-box">
               <h3 class="duties-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
-              <img
-                class="img"
-                src="./img/programer.jpg"
-                alt="Programer working his desk"
-                width="370"
-              />
+              <picture>
+                <source srcset="./img/desktop/programer.jpg 1x, ./img/desktop/programer@2x.jpg 2x" media="(min-width: 1200px)" />
+              <img class="img" src="./img/programer.jpg" alt="Programer working his desk" width="370"/>
+             </picture>
             </li>
             <li class="duties-box">
               <h3 class="duties-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
+              <picture>
+                <source srcset="./img/desktop/smartphone.jpg 1x, ./img/desktop/smartphone@2x.jpg 2x" media="(min-width: 1200px)" />
               <img
                 src="./img/smartphone.jpg"
                 alt="Smartphone application"
                 width="370"
               />
+              </picture>
             </li>
             <li class="duties-box">
               <h3 class="duties-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
+              <picture>
+                <source srcset="./img/desktop/graphic-tablet.jpg 1x, ./img/desktop/graphic-tablet@2x.jpg 2x" media="(min-width: 1200px)" />
               <img
                 src="./img/graphic-tablet.jpg"
                 alt="Colour selection graphic tablet"
                 width="370"
               />
+            </picture>
             </li>
           </ul>
         </div>
@@ -202,7 +210,12 @@
 
           <ul class="list crew-list">
             <li class="crew-item">
+              <picture>
+              <source srcset="./img/desktop/igor.jpg 1x, ./img/desktop/igor@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet/igor.jpg 1x, ./img/tablet/igor@2x.jpg 2x" media="(min-width: 768px)" />  
+              <source srcset="./img/mobile/igor.jpg 1x, ./img/mobile/igor@2x.jpg 2x" media="(max-width: 767px)" />
               <img src="./img/igor.jpg" alt="Игорь Демьяненко" width="270" />
+              </picture>
               <h4 class="crew-name">Игорь Демьяненко</h4>
               <p class="crew-position">Product designer</p>
               <ul class="list social-icons">
@@ -261,7 +274,12 @@
               </ul>
             </li>
             <li class="crew-item">
+              <picture>
+              <source srcset="./img/desktop/olga.jpg 1x, ./img/desktop/olga@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet/olga.jpg 1x, ./img/tablet/olga@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mobile/olga.jpg 1x, ./img/mobile/olga@2x.jpg 2x" media="(max-width: 767px)" />
               <img src="./img/olga.jpg" alt="Ольга Репина" width="270" />
+              </picture>
               <h4 class="crew-name">Ольга Репина</h4>
               <p class="crew-position">Frontend Developer</p>
               <ul class="list social-icons">
@@ -320,7 +338,12 @@
               </ul>
             </li>
             <li class="crew-item">
-              <img src="./img/nick.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source srcset="./img/desktop/nick.jpg 1x, ./img/desktop/nick@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/tablet/nick.jpg 1x, ./img/tablet/nick@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/mobile/nick.jpg 1x, ./img/mobile/nick@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./img/nick.jpg" alt="Николай Тарасов" width="270" />
+            </picture>
               <h4 class="crew-name">Николай Тарасов</h4>
               <p class="crew-position">Marketing</p>
               <ul class="list social-icons">
@@ -379,7 +402,13 @@
               </ul>
             </li>
             <li class="crew-item">
+              <picture>
+              <source srcset="./img/desktop/mike.jpg 1x, ./img/desktop/mike@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/tablet/mike.jpg 1x, ./img/tablet/mike@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./img/mobile/mike.jpg 1x, ./img/mobile/mike@2x.jpg 2x" media="(max-width: 767px)" />
+              
               <img src="./img/mike.jpg" alt="Михаил Ермаков" width="270" />
+            </picture>
               <h4 class="crew-name">Михаил Ермаков</h4>
               <p class="crew-position">UI designer</p>
               <ul class="list social-icons">

@@ -4,7 +4,7 @@
 
   @include for-size(desktop) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -17,15 +17,11 @@
   }
 }
 .contacts {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 60px;
-
-  @include for-size(desktop) {
-    margin-right: 70px;
-  }
 }
 
 .footer-adress {
