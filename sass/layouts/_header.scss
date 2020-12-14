@@ -163,6 +163,11 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 320px) {
+  .header-container {
+    justify-content: center;
+  }
+}
 
 .link:hover,
 .link:focus {

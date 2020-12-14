@@ -56,7 +56,7 @@ address {
 
 @media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 
@@ -67,6 +67,24 @@ address {
 }
 
 @media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -225,6 +243,12 @@ address {
 @media screen and (max-width: 767px) {
   .header-container {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .header-container {
+    justify-content: center;
   }
 }
 
@@ -408,6 +432,12 @@ address {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .navigation {
+    width: 320px;
+  }
+}
+
 .dark-bg {
   background-color: var(--dark-bg);
 }
@@ -422,12 +452,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .box {
-    background-image: url("../../img/desktop/bgr@2x.jpg");
-  }
 }
 
 .hero {
